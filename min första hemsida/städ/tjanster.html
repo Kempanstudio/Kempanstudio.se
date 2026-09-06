@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagerstål Städ | Våra tjänster</title>
+  <style>
+    :root { --ink: #1b2933; --muted: #64747d; --paper: #f3f8f7; --white: #fff; --teal: #168277; --dark: #123b40; --yellow: #f2c14e; --line: #dce9e6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); font-family: Arial, sans-serif; background: var(--paper); line-height: 1.6; }
+    header { padding: 24px 20px 70px; color: var(--white); text-align: center; background: linear-gradient(135deg, #123b40, #168277); }
+    nav { display: flex; max-width: 1100px; margin: 0 auto 65px; align-items: center; justify-content: space-between; }
+    nav a { color: var(--white); text-decoration: none; }
+    .brand { font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(2.3rem, 5vw, 4rem); }
+    header p { color: #e1f3ef; }
+    main { max-width: 1100px; margin: -35px auto 0; padding: 0 20px 80px; }
+    .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { min-height: 250px; padding: 30px; border: 1px solid var(--line); border-radius: 6px; background: var(--white); box-shadow: 0 12px 28px rgba(18, 59, 64, .08); }
+    .number { color: var(--teal); font-weight: 700; }
+    h2 { margin: 10px 0; }
+    .card p { color: var(--muted); }
+    .contact-link { display: inline-block; margin-top: 12px; padding: 12px 20px; border-radius: 4px; color: var(--ink); background: var(--yellow); font-weight: 700; text-decoration: none; }
+    footer { padding: 24px; color: #d6e4e2; text-align: center; background: var(--dark); }
+    footer p { margin: 0; }
+    @media (max-width: 700px) { .services { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Huvudmeny">
+      <a class="brand" href="index.html">Lagerstål Städ</a>
+      <a href="kontakt.html">Kontakta oss</a>
+    </nav>
+    <h1>Våra tjänster</h1>
+    <p>Omsorgsfull städning för hem, företag och speciella tillfällen.</p>
+  </header>
+
+  <main>
+    <section class="services" aria-label="Lagerstål Städs tjänster">
+      <article class="card">
+        <span class="number">01</span>
+        <h2>Hemstädning</h2>
+        <p>Regelbunden eller tillfällig städning som ger ditt hem en fräsch och trivsam känsla.</p>
+      </article>
+      <article class="card">
+        <span class="number">02</span>
+        <h2>Företagsstädning</h2>
+        <p>En ren och välkomnande arbetsmiljö för kontor, butiker och andra verksamheter.</p>
+      </article>
+      <article class="card">
+        <span class="number">03</span>
+        <h2>Flyttstädning</h2>
+        <p>En grundlig städning inför besiktning, försäljning eller nästa kapitel i livet.</p>
+      </article>
+    </section>
+    <p style="text-align: center; margin-top: 36px;"><a class="contact-link" href="kontakt.html">Be om en offert</a></p>
+  </main>
+
+  <footer><p>&copy; 2026 Lagerstål Städ</p></footer>
+</body>
+</html>

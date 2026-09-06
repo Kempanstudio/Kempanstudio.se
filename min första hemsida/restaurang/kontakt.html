@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Boka bord eller kontakta Måltid i Stockholm.">
+  <title>Måltid | Boka bord</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header page-header">
+    <nav aria-label="Huvudmeny"><a class="brand" href="index.html">Måltid</a><div class="nav-links"><a href="meny.html">Meny</a><a href="kontakt.html">Boka bord</a></div></nav>
+    <div class="hero-content"><span class="eyebrow">Vi ser fram emot ditt besök</span><h1>Boka bord</h1><p>Skicka en förfrågan så återkommer vi med en bekräftelse så snart vi kan.</p></div>
+  </header>
+  <main>
+    <div class="form-layout">
+      <aside class="info-panel">
+        <h2>Hitta till oss</h2>
+        <p>Vi finns på Storgatan, nära torget. Kom gärna en stund innan och ta något att dricka i baren.</p>
+        <ul class="info-list">
+          <li><strong>Adress</strong><br>Storgatan 14, Stockholm</li>
+          <li><strong>Öppettider</strong><br>Onsdag–lördag, 17.00–sent</li>
+          <li><strong>Telefon</strong><br>08–123 45 67</li>
+        </ul>
+      </aside>
+      <form action="mailto:boka@matid.se" method="post" enctype="text/plain">
+        <label for="name">Namn</label><input id="name" name="name" type="text" autocomplete="name" required>
+        <label for="email">E-post</label><input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="guests">Antal gäster</label><select id="guests" name="guests"><option>2 gäster</option><option>3 gäster</option><option>4 gäster</option><option>5 eller fler gäster</option></select>
+        <label for="date">Önskat datum och tid</label><input id="date" name="date" type="text" placeholder="Exempel: fredag 19.00" required>
+        <label for="message">Meddelande eller allergier</label><textarea id="message" name="message"></textarea>
+        <button type="submit">Skicka bokningsförfrågan</button>
+      </form>
+    </div>
+  </main>
+  <footer><div class="footer-inner"><span>Måltid · Storgatan 14, Stockholm</span><span>Ons–Lör 17.00–sent</span></div></footer>
+</body>
+</html>
